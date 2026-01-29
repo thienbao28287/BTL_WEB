@@ -1,0 +1,363 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --default-font:
+    "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.main-content {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1320px;
+  max-width: calc(100% - 48px);
+}
+.btn {
+  background-color: #008cad;
+  color: white;
+  font-size: 14px;
+  margin: 0 0 0 30px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.header {
+  padding-top: 20px;
+  padding-bottom: 8px;
+  background-image:
+    linear-gradient(135deg, rgba(3, 16, 19, 0.5), rgba(3, 16, 19, 0.5)),
+    url(../../assests/images/showcase-8-sua.jpg);
+  height: 365px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 20px 0;
+  transition: 0.3s;
+}
+.header .body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.body .title {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  margin-left: 25px;
+  font-weight: 600;
+  padding: 5px 0 5px 5px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.main-navbar {
+  background-color: rgba(0, 0, 0, 0.26);
+  border-radius: 50px;
+}
+.navbar ul {
+  display: flex;
+}
+.navbar ul li {
+  position: relative;
+}
+.navbar a {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 25px 14.87px;
+  font-size: 19px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+.navbar a:hover {
+  color: rgba(255, 255, 255, 0.7);
+  text-shadow: 1px 0 0 rgba(255, 255, 255, 0.7);
+  text-decoration: underline;
+}
+
+.navbar ul li ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  display: none;
+  flex-direction: column;
+  padding: 10px 0;
+  z-index: 999;
+}
+.navbar ul li ul li a {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: black;
+  white-space: nowrap;
+}
+.navbar ul li ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: black;
+  text-decoration: none;
+}
+.navbar ul li:hover > ul {
+  display: flex;
+}
+
+.action {
+  margin-right: 30px;
+}
+.action .btn-Get-Started {
+  padding: 10.5px 24px;
+  min-width: 114px;
+  font-size: 15px;
+}
+.sub-title,
+.blog .desc {
+  text-align: center;
+}
+.blog .sub-title {
+  margin-top: 140px;
+  color: white;
+  font-size: 42px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+.blog .desc {
+  margin: 16px 7px 10px;
+  font-size: 14px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+.home-blog {
+  margin-top: 17px;
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+.home-blog .home-blog-row {
+  margin-top: 5px;
+  font-size: 10px;
+  color: #bdb7b6;
+}
+.link-home {
+  font-size: 15px;
+  font-weight: 400;
+  color: #008cad;
+  margin-right: 7px;
+}
+.link-blog {
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+  margin-left: 7px;
+}
+/* ================== Main ===================== */
+.main .main--content {
+  width: 790px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.maincontent {
+  margin-top: 117px;
+}
+.main--content .content .time {
+  margin-top: 65px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #69787b;
+  font-family: "Roboto", sans-serif;
+}
+.main--content .content .title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 600;
+  font-size: 2.9rem;
+  font-family: "Raleway", sans-serif;
+  line-height: 42.24px;
+  color: #1c4b56;
+}
+.main--content .content .desc {
+  text-align: center;
+  color: #1c4b56;
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: "Roboto", sans-serif;
+}
+/* ================== section =============== */
+
+.main--content h2 {
+  margin-top: 50px;
+  margin-bottom: 25px;
+  text-align: start;
+  font-size: 1.8rem;
+  color: #1c4b56;
+  font-weight: 600;
+}
+.main--content h3 {
+  margin-bottom: 25px;
+  color: #1c4b56;
+  font-family: Raleway, sans-serif;
+  font-size: 22.4px;
+  line-height: 26.88px;
+}
+.maincontent p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: rgb(5, 30, 35);
+  font-family: "Roboto", sans-serif;
+}
+.contact-p {
+  margin-top: 50px;
+  margin-left: 20px;
+}
+.fade-block {
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+/* ======================== Footer ==================== */
+.footer {
+  margin-top: 50px;
+  background-color: #0b171a;
+  height: 250px;
+}
+.footer .sub-title {
+  padding-top: 45px;
+  padding-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 24px;
+  font-weight: 700px;
+}
+.footer .desc {
+  padding-bottom: 30px;
+  text-align: center;
+  color: white;
+}
+.input {
+  border-color: #252525;
+  color: white;
+  position: relative;
+  display: flex;
+  border-radius: 50px;
+  width: 630px;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: auto;
+  margin-left: auto;
+}
+.input .email {
+  background-color: #373737;
+  padding-left: 12px;
+  color: white;
+  height: 47px;
+  width: 550px;
+  border-radius: 50px 0 0 50px;
+}
+.input .input-button {
+  position: absolute;
+  border-color: rgba(255, 255, 255, 0.1);
+  font-style: 16px;
+  padding: 14px 20px;
+  margin-left: auto;
+  right: 0;
+}
+.footer2 {
+  padding-top: 50px;
+  background-color: #031013;
+  height: 200px;
+  color: white;
+  padding-bottom: 50px;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+.hehe {
+  font-size: 25px;
+}
+.ft-title {
+  font-family: "Raleway", sans-serif;
+}
+.address {
+  margin-top: 10px;
+}
+.connect {
+  margin-top: 15px;
+}
+.footer-links {
+  line-height: 25px;
+}
+.footer-services {
+  line-height: 25px;
+}
+.footer-follow {
+  line-height: 25px;
+}
+.fa-solid {
+  font-size: 12px;
+  color: #008cad;
+
+  align-items: center;
+}
+.footer-links a {
+  color: rgba(255, 255, 255, 0.7);
+}
+.footer-services a {
+  color: rgba(255, 255, 255, 0.7);
+}
+.contact-icon {
+  margin-top: 10px;
+  display: flex;
+  gap: 12px;
+}
+.contact-icon a {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+  color: white;
+}
+.footer-f {
+  padding-top: 30px;
+  background-color: #031013;
+  color: white;
+  text-align: center;
+}
+.footer-f .content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.footer-services a:hover {
+  color: #008cad;
+}
+.footer-follow a:hover {
+  color: #008cad;
+}
+.footer-links a:hover {
+  color: #008cad;
+}

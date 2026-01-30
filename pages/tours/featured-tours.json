@@ -1,0 +1,66 @@
+[
+  {
+    "title": "Bali Adventure Escape",
+    "tag": "Best Seller",
+    "description": "Discover the mystical beauty of Bali with temple visits, volcano hiking, and pristine beaches.",
+    "duration": "7 Days",
+    "price_from": "$899",
+    "image": "tour-1.webp"
+  },
+  {
+    "title": "Romantic Paris Getaway",
+    "tag": "Luxury",
+    "description": "Experience the city of love with premium accommodations and exclusive dining.",
+    "duration": "5 Days",
+    "price_from": "$1299",
+    "image": "tour-2.webp"
+  },
+  {
+    "title": "Tokyo Cultural Experience",
+    "tag": "New",
+    "description": "Immerse yourself in Japanese culture, from traditional tea ceremonies to modern city life.",
+    "duration": "10 Days",
+    "price_from": "$1599",
+    "image": "tour-3.webp"
+  },
+  {
+    "title": "Norwegian Fjords Cruise",
+    "tag": "Popular",
+    "description": "Sail through dramatic fjords and witness the stunning landscapes of Norway's coastline.",
+    "duration": "9 Days",
+    "price_from": "$1899",
+    "image": "tour-4.webp"
+  },
+  {
+    "title": "Ancient Egypt Explorer",
+    "tag": "Cultural",
+    "description": "Journey through time visiting pyramids, temples, and sailing the legendary Nile River.",
+    "duration": "8 Days",
+    "price_from": "$1149",
+    "image": "tour-5.webp"
+  },
+  {
+    "title": "Costa Rica Eco Adventure",
+    "tag": "Adventure",
+    "description": "Experience rainforest canopy tours, wildlife viewing, and pristine beaches in this eco paradise.",
+    "duration": "6 Days",
+    "price_from": "$749",
+    "image": "tour-6.webp"
+  },
+  {
+    "title": "Greek Islands Hopping",
+    "tag": "Summer Special",
+    "description": "Explore the stunning Greek islands, from Santorini's sunsets to Mykonos' vibrant nightlife.",
+    "duration": "11 Days",
+    "price_from": "$1399",
+    "image": "tour-7.webp"
+  },
+  {
+    "title": "Patagonia Wilderness Trek",
+    "tag": "Extreme",
+    "description": "Challenge yourself in one of the world's last great wildernesses with glaciers and mountain peaks.",
+    "duration": "12 Days",
+    "price_from": "$2299",
+    "image": "tour-8.webp"
+  }
+]

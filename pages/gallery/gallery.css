@@ -1,0 +1,133 @@
+:root {
+    --color-primary: #008CAD;
+    --color-text: #1C4B56;
+
+    --font-main: "Montserrat", sans-serif;
+    --section-padding: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+}
+
+section {
+    display: grid;
+    grid-template-columns:
+        minmax(50px, 1fr) minmax(0, 1200px) minmax(50px, 1fr);
+    padding-block: var(--section-padding);
+    padding-top: 50px;
+}
+
+section>* {
+    grid-column: 2;
+}
+
+.header__navbar ul{
+    display: flex;
+    background-color: rgba(0,0,0,0.7);
+    justify-content: space-between;
+    width: 80vw;
+    list-style-type: none;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 1rem;
+    border-radius: 3rem;
+    align-items: center;
+}
+
+.header__navbar ul li a{
+    text-decoration: none;
+    color: #C6CAC9;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.header__navbar ul li a:hover{
+    color: white;
+}
+.header__navbar ul li:first-child a{
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+}
+.header__navbar ul li:nth-child(6) a{
+    color: white;
+}
+.header__navbar button{
+    background-color: var(--color-primary);
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+}
+.subscribe{
+    background-color: #0B171A;
+    color: white;
+    line-height: 50px;
+    height: 40vh;
+    text-align: center;
+}
+.form-subscribe{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    position: relative;
+}
+.form-subscribe input{
+    width: 30rem;
+    border: 1px solid #3B3B3B;
+    border-radius: 20px;
+    background-color: #252525;
+}
+.form-subscribe button{
+    border-radius: 20px;
+    border: none;
+    line-height: 40px;
+    padding: 0 20px;
+    position: absolute;
+    right: 29%;
+    background-color: var(--color-primary);
+    color: white;
+    font-size: 15px;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+    list-style-type: none;
+    color: white;
+    background-color: #031013;
+    height: 50vh;
+    font-size: 13px;
+    padding: 50px;
+}
+footer ul{
+    list-style-type: none;
+}
+footer ul li a{
+    text-decoration: none;
+    color: white;
+    line-height: 30px;
+}
+footer h4{
+    font-size: 18px;
+    line-height: 50px;
+}
+footer i{
+    color: var(--color-primary)
+}
+.contact-icons{
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.contact-icons a{
+    border: 1px solid var(--color-primary);
+    border-radius: 50%;
+    padding: 10px;
+}

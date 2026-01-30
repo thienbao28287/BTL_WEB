@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -27,16 +29,70 @@
                 <li><a href="">More Pages<i class="fa-solid fa-chevron-down"></i></a></li>
                 <li><a href="">Dropdown<i class="fa-solid fa-chevron-down"></i></a></li>
                 <li><a href="">Contact</a></li>
-                <li><button><a href="">Get Started</a></button></li>
+                <li><button>Get Started</button></li>
             </ul>
+        </div>
+        <div class="header__content">
+            <h1>Gallery</h1>
+            <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam
+                molestias.
+            </p>
+            <p>Home / Gallery</p>
         </div>
     </header>
 
     <section class="gallery1">
-
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="../../assests/images/gallery-1.webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../../assests/images/gallery-2.webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../../assests/images/gallery-3.webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../../assests/images/gallery-4.webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../../assests/images/gallery-5.webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../../assests/images/gallery-6.webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../../assests/images/gallery-7.webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../../assests/images/gallery-8.webp" alt="">
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="pre"><i class="fa-solid fa-angle-left"></i></button>
+                <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
     </section>
     <section class="gallery2">
-
+        <div class="filter-buttons">
+            <button>All</button>
+            <button>Nature</button>
+            <button>Architecture</button>
+            <button>People</button>
+        </div>
+        <div class="gallery-grid">
+            <img src="../../assests/images/gallery-1.webp" alt="">
+            <img src="../../assests/images/gallery-2.webp" alt="">
+            <img src="../../assests/images/gallery-3.webp" alt="">
+            <img src="../../assests/images/gallery-4.webp" alt="">
+            <img src="../../assests/images/gallery-5.webp" alt="">
+            <img src="../../assests/images/gallery-6.webp" alt="">
+            <img src="../../assests/images/gallery-7.webp" alt="">
+            <img src="../../assests/images/gallery-8.webp" alt="">
+        </div>
     </section>
     <section class="subscribe">
         <h3>Join Our Newsletter</h3>
@@ -84,5 +140,9 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="gallery.js"></script>
 </body>
+
 </html>

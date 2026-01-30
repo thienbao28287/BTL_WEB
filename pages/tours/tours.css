@@ -68,17 +68,90 @@ section>* {
     font-weight: 600;
 }
 
-/* để lướt ngang các card */
+/* để lướt ngang các card
 .featuredTours {
     display: flex;
     gap: 24px;
 
     overflow-x: auto;
-    /* cho phép lướt ngang */
+    cho phép lướt ngang
     overflow-y: hidden;
     padding-bottom: 10px;
     scroll-behavior: smooth;
+} */
+
+/* ========TEST====== */
+.gallery1 {
+    padding: 60px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
 }
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px; /* Chừa chỗ cho pagination */
+}
+
+.swiper-slide {
+    overflow: hidden;
+    border-radius: 10px;
+    /* background-color: aquamarine; */
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.swiper-slide:hover img {
+    transform: scale(1.05);
+}
+
+.buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 10;
+    pointer-events: none; /* Để không chặn click vào ảnh */
+}
+
+.buttons button {
+    width: 45px;
+    height: 45px;
+    border: none;
+    background: rgba(255, 255, 255, 0.8);
+    color: var(--color-text);
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 15px;
+    pointer-events: auto; /* Kích hoạt lại click cho nút */
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.buttons button:hover {
+    background: var(--color-primary); 
+    color: white;
+}
+
+/* Tùy chỉnh Pagination (Dấu chấm ở dưới) */
+.swiper-pagination-bullet-active { /*class mặc định của swiper*/
+    background: var(--color-primary);
+}
+
+
+
+
+
+
 
 .card {
     flex: 0 0 350px;
@@ -88,15 +161,14 @@ section>* {
     overflow: hidden;
     position: relative;
 }
-
-.card__image img:hover {
-    transform: scale(1.02);
-}
-
 .card__image img {
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
     object-fit: contain;
     transition: transform 0.3s ease;
+}
+.card__image img:hover {
+    transform: scale(1.02);
 }
 
 .card__tag {

@@ -12,6 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -57,7 +58,16 @@
     </section>
     <section class="features">
         <h3 class="title-type2">Featured Tours</h3>
-        <div class="featuredTours"></div>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+
+            </div>
+            <div class="buttons">
+                <button id="pre"><i class="fa-solid fa-angle-left"></i></button>
+                <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
     </section>
     <section class="browse">
         <h3 class="title-type2">Browse by Category</h3>
@@ -240,7 +250,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="tours.js"></script>
 </body>
 

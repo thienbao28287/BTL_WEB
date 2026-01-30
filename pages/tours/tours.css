@@ -28,6 +28,73 @@ section>* {
     grid-column: 2;
 }
 
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("../../assests/images/showcase-8-sua.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+}
+.header__navbar{
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+.header__navbar ul{
+    display: flex;
+    background-color: rgba(0,0,0,0.6);
+    justify-content: space-between;
+    width: 80vw;
+    list-style-type: none;
+    padding: 1rem;
+    border-radius: 3rem;
+    align-items: center;
+}
+
+.header__navbar ul li a{
+    text-decoration: none;
+    color: #C6CAC9;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.header__navbar ul li a:hover{
+    color: white;
+}
+.header__navbar ul li:first-child a{
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+}
+.header__navbar ul li:nth-child(5) a{
+    color: white;
+}
+.header__navbar button{
+    background-color: var(--color-primary);
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+}
+.header__navbar button:hover{
+    background-color: var(--color-text);
+}
+.header__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    color: white;
+    line-height: 2rem;
+}
+.header__content h1{
+    font-size: 50px;
+    padding-bottom: 30px;
+}
 .findTour,.contact, .subscribe {
     text-align: center;
     /* background-color: blue; */

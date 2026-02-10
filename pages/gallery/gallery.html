@@ -26,7 +26,19 @@
                 <li><a href="">Tours</a></li>
                 <li><a href="">Gallery</a></li>
                 <li><a href="">Blog</a></li>
-                <li><a href="">More Pages<i class="fa-solid fa-chevron-down"></i></a></li>
+                <li class="parent"><a href="">More Pages<i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="child">
+                        <li><a href="">Destination Details</a></li>
+                        <li><a href="">Tour Details</a></li>
+                        <li><a href="">Booking</a></li>
+                        <li><a href="">Testimonials</a></li>
+                        <li><a href="">Frequently Asked Questions</a></li>
+                        <li><a href="">Blog Details</a></li>
+                        <li><a href="">Terms</a></li>
+                        <li><a href="">Privacy</a></li>
+                        <li><a href="">404</a></li>
+                    </ul>
+                </li>
                 <li><a href="">Dropdown<i class="fa-solid fa-chevron-down"></i></a></li>
                 <li><a href="">Contact</a></li>
                 <li><button>Get Started</button></li>
@@ -72,26 +84,42 @@
             <div class="buttons">
                 <button id="pre"><i class="fa-solid fa-angle-left"></i></button>
                 <button id="next"><i class="fa-solid fa-angle-right"></i></button>
-            </div>
-            <div class="swiper-pagination"></div>
+            </div>   
         </div>
+        <div class="swiper-pagination"></div>
     </section>
     <section class="gallery2">
         <div class="filter-buttons">
-            <button>All</button>
+            <button class="active">All</button>
             <button>Nature</button>
             <button>Architecture</button>
             <button>People</button>
         </div>
         <div class="gallery-grid">
-            <img src="../../assests/images/gallery-1.webp" alt="">
-            <img src="../../assests/images/gallery-2.webp" alt="">
-            <img src="../../assests/images/gallery-3.webp" alt="">
-            <img src="../../assests/images/gallery-4.webp" alt="">
-            <img src="../../assests/images/gallery-5.webp" alt="">
-            <img src="../../assests/images/gallery-6.webp" alt="">
-            <img src="../../assests/images/gallery-7.webp" alt="">
-            <img src="../../assests/images/gallery-8.webp" alt="">
+            <div class="item" data-type="nature">
+                <img src="../../assests/images/gallery-1.webp" alt="">
+            </div>
+            <div class="item" data-type="architecture">
+                <img src="../../assests/images/gallery-2.webp" alt="">
+            </div>
+            <div class="item" data-type="people">
+                <img src="../../assests/images/gallery-3.webp" alt="">
+            </div>
+            <div class="item" data-type="nature">
+                <img src="../../assests/images/gallery-4.webp" alt="">
+            </div>
+            <div class="item" data-type="architecture">
+                <img src="../../assests/images/gallery-5.webp" alt="">
+            </div>
+            <div class="item" data-type="people">
+                <img src="../../assests/images/gallery-6.webp" alt="">
+            </div>
+            <div class="item" data-type="nature">
+                <img src="../../assests/images/gallery-7.webp" alt="">
+            </div>
+            <div class="item" data-type="architecture">
+                <img src="../../assests/images/gallery-8.webp" alt="">
+            </div>
         </div>
     </section>
     <section class="subscribe">

@@ -28,23 +28,25 @@ section>* {
     grid-column: 2;
 }
 
-header{
-    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("../../assests/images/showcase-8-sua.jpg");
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../assests/images/showcase-8-sua.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 70vh;
     width: 100%;
 }
-.header__navbar{
+
+.header__navbar {
     position: fixed;
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 100;
 }
-.header__navbar ul{
+
+.header__navbar>ul {
     display: flex;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0, 0, 0, 0.6);
     justify-content: space-between;
     width: 80vw;
     list-style-type: none;
@@ -53,24 +55,28 @@ header{
     align-items: center;
 }
 
-.header__navbar ul li a{
+.header__navbar ul li a {
     text-decoration: none;
     color: #C6CAC9;
     font-weight: 500;
     transition: color 0.3s ease;
 }
-.header__navbar ul li a:hover{
+
+.header__navbar>ul>li>a:hover {
     color: white;
 }
-.header__navbar ul li:first-child a{
+
+.header__navbar>ul>li:first-child a {
     color: white;
     font-size: 23px;
     font-weight: bold;
 }
-.header__navbar ul li:nth-child(6) a{
+
+.header__navbar>ul>li:nth-child(5) a {
     color: white;
 }
-.header__navbar button{
+
+.header__navbar button {
     background-color: var(--color-primary);
     border: none;
     padding: 10px;
@@ -79,19 +85,64 @@ header{
     font-size: 15px;
     transition: background-color 0.3s ease;
 }
-.header__navbar button:hover{
+
+.header__navbar button:hover {
     background-color: var(--color-text);
 }
+
+.parent {
+    position: relative;
+}
+
+.child {
+    position: absolute;
+    width: 250px;
+    z-index: 10;
+    top: 45px;
+    list-style-type: none;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px rgb(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease,
+        visibility 0.3s,
+        color 0.3s ease;
+    /* visibility: visible → hidden(Browser đợi 0.25s, sau đó mới chuyển sang hidden)
+        visibility: hidden → visible(Browser chuyển ngay lập tức, không chờ 0.3s) */
+}
+
+.parent>ul>li>a {
+    color: black;
+    padding-left: 10px;
+    line-height: 40px;
+}
+
+.parent>ul>li>a:hover {
+    color: var(--color-primary);
+}
+
+.parent:hover .child {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
 .header__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height:100%;
+    height: 100%;
     color: white;
     line-height: 2rem;
 }
-.header__content h1{
+
+.header__content h1 {
     font-size: 50px;
     padding-bottom: 30px;
 }
@@ -99,25 +150,26 @@ header{
 
 .gallery1 {
     padding: 60px 0;
-    max-width: 1200px;
     margin: 0 auto;
     position: relative;
 }
 
 .swiper {
     width: 100%;
-    height: 100%;
-    padding-bottom: 50px; /* Chừa chỗ cho pagination */
 }
 
 .swiper-slide {
     overflow: hidden;
     border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    width: 300px; /* Chiều rộng của slide trung tâm */
+    height: 300px; /* Chiều cao của slide trung tâm */
 }
 
 .swiper-slide img {
     width: 100%;
-    height: 300px; 
+    height: 100%;
     object-fit: cover;
     display: block;
     transition: transform 0.3s ease;
@@ -135,7 +187,8 @@ header{
     justify-content: space-between;
     transform: translateY(-50%);
     z-index: 10;
-    pointer-events: none; /* Để không chặn click vào ảnh */
+    pointer-events: none;
+    /* Để không chặn click vào ảnh */
 }
 
 .buttons button {
@@ -147,18 +200,20 @@ header{
     border-radius: 50%;
     cursor: pointer;
     margin: 0 15px;
-    pointer-events: auto; /* Kích hoạt lại click cho nút */
+    pointer-events: auto;
+    /* Kích hoạt lại click cho nút */
     transition: 0.3s;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .buttons button:hover {
-    background: var(--color-primary); 
+    background: var(--color-primary);
     color: white;
 }
 
 /* Tùy chỉnh Pagination (Dấu chấm ở dưới) */
-.swiper-pagination-bullet-active { /*class mặc định của swiper*/
+.swiper-pagination-bullet-active {
+    /*class mặc định của swiper*/
     background: var(--color-primary);
 }
 
@@ -169,53 +224,83 @@ header{
     justify-content: center;
     margin-bottom: 30px;
 }
+
 .filter-buttons button {
     border: none;
     padding: 10px 30px;
     border-radius: 30px;
     font-weight: bold;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
 }
-.filter-buttons button:hover{
+
+.filter-buttons button.active {
     background-color: var(--color-primary);
 }
+
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 20px;
 }
+
 .gallery-grid img {
     max-width: 260px;
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
+
 .gallery-grid img:hover {
     transform: scale(1.02);
 }
+.gallery-grid .item {
+    border-radius: 16px;
+    overflow: hidden;
+
+    opacity: 1;
+    transform: translateY(0) scale(1);
+
+    transition:
+        opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery-grid .item.hide {
+    opacity: 0;
+    transform: scale(0.85) translateY(20px);
+    pointer-events: none;
+    position: absolute;
+}
+.gallery-grid .item.enter {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.95);
+}
 
 
-.subscribe{
+.subscribe {
     background-color: #0B171A;
     color: white;
     line-height: 50px;
     height: 40vh;
     text-align: center;
 }
-.form-subscribe{
+
+.form-subscribe {
     display: flex;
     justify-content: center;
     height: 40px;
     position: relative;
 }
-.form-subscribe input{
+
+.form-subscribe input {
     width: 30rem;
     border: 1px solid #3B3B3B;
     border-radius: 20px;
     background-color: #252525;
 }
-.form-subscribe button{
+
+.form-subscribe button {
     border-radius: 20px;
     border: none;
     line-height: 40px;
@@ -227,7 +312,7 @@ header{
     font-size: 15px;
 }
 
-footer{
+footer {
     display: grid;
     grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
     list-style-type: none;
@@ -237,28 +322,34 @@ footer{
     font-size: 13px;
     padding: 50px;
 }
-footer ul{
+
+footer ul {
     list-style-type: none;
 }
-footer ul li a{
+
+footer ul li a {
     text-decoration: none;
     color: white;
     line-height: 30px;
 }
-footer h4{
+
+footer h4 {
     font-size: 18px;
     line-height: 50px;
 }
-footer i{
+
+footer i {
     color: var(--color-primary)
 }
-.contact-icons{
+
+.contact-icons {
     display: flex;
     gap: 20px;
     font-size: 20px;
     margin-top: 20px;
 }
-.contact-icons a{
+
+.contact-icons a {
     border: 1px solid var(--color-primary);
     border-radius: 50%;
     padding: 10px;

@@ -1,0 +1,292 @@
+:root {
+    --color-primary: #008CAD;
+    --color-text: #1C4B56;
+
+    --font-main: "Montserrat", sans-serif;
+    --section-padding: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+}
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../assests/images/showcase-8-sua.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+}
+
+.header__navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+.header__navbar>ul {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: space-between;
+    width: 80vw;
+    list-style-type: none;
+    padding: 1rem;
+    border-radius: 3rem;
+    align-items: center;
+}
+
+.header__navbar ul li a {
+    text-decoration: none;
+    color: #C6CAC9;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.header__navbar>ul>li>a:hover {
+    color: white;
+}
+
+.header__navbar>ul>li:first-child a {
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+}
+.header__navbar button {
+    background-color: var(--color-primary);
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.header__navbar button:hover {
+    background-color: var(--color-text);
+}
+
+.parent {
+    position: relative;
+}
+
+.child {
+    position: absolute;
+    width: 250px;
+    z-index: 10;
+    top: 45px;
+    list-style-type: none;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px rgb(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease,
+        visibility 0.3s,
+        color 0.3s ease;
+    /* visibility: visible → hidden(Browser đợi 0.25s, sau đó mới chuyển sang hidden)
+        visibility: hidden → visible(Browser chuyển ngay lập tức, không chờ 0.3s) */
+}
+
+.parent>ul>li>a {
+    color: black;
+    padding-left: 10px;
+    line-height: 40px;
+}
+
+.parent>ul>li>a:hover {
+    color: var(--color-primary);
+}
+
+.parent:hover .child {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.header__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    line-height: 2rem;
+}
+
+.header__content h1 {
+    font-size: 50px;
+    padding-bottom: 30px;
+}
+
+
+.content {
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.content-left {
+    min-width: 35vw;
+    width: 35vw;
+}
+.content-left img {
+    width: 100%;
+    padding-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+.content-left img:hover {
+    transform: scale(1.02);
+}
+.connect {
+    background-color: #E5F3F6;
+    padding: 25px;
+    border-radius: 20px;
+}
+.content i {
+    color: var(--color-primary);
+}
+.text-des, .answer {
+    font-size: 15px;
+    padding: 15px 0;
+}
+.connect button {
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: transform 0.3s ease, 
+                background-color 0.3s ease;
+}
+.connect button:hover {
+    transform: translateY(-3px);
+    background-color: #09b6dc;
+}
+.filter-buttons {
+    border-bottom: 1px solid rgb(148, 144, 144);
+    padding-bottom: 10px;
+}
+.filter-buttons button {
+    font-family: var(--font-main);
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 10px;
+    font-weight: 550;
+    margin-right: 20px;
+    transition: background-color 0.3s ease;
+}
+.filter-buttons button:hover {
+    background-color: rgb(233, 233, 233);
+}
+.filter-buttons button.active {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.faq-list {
+    padding-top: 50px;
+}
+.faq-item {
+    box-shadow: 3px 5px 10px rgba(70, 70, 70, 0.2);
+    border-radius: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+.question {
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-primary);
+    font-weight: 550;
+}
+
+.subscribe {
+    background-color: #0B171A;
+    color: white;
+    line-height: 50px;
+    height: 40vh;
+    text-align: center;
+}
+
+.form-subscribe {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    position: relative;
+}
+
+.form-subscribe input {
+    width: 30rem;
+    border: 1px solid #3B3B3B;
+    border-radius: 20px;
+    background-color: #252525;
+}
+
+.form-subscribe button {
+    border-radius: 20px;
+    border: none;
+    line-height: 40px;
+    padding: 0 20px;
+    position: absolute;
+    right: 29%;
+    background-color: var(--color-primary);
+    color: white;
+    font-size: 15px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+    list-style-type: none;
+    color: white;
+    background-color: #031013;
+    height: 50vh;
+    font-size: 13px;
+    padding: 50px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+    line-height: 30px;
+}
+
+footer h4 {
+    font-size: 18px;
+    line-height: 50px;
+}
+
+footer i {
+    color: var(--color-primary)
+}
+
+.contact-icons {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.contact-icons a {
+    border: 1px solid var(--color-primary);
+    border-radius: 50%;
+    padding: 10px;
+}

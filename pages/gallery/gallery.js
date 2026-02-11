@@ -44,7 +44,7 @@ const swiper = new Swiper('.swiper', {
 
 
 //=====================FILTER====================================
-const buttons = document.querySelectorAll(".filter-buttons button");
+const buttons = document.querySelectorAll(".filter-buttons button"); //kq trả về là nodeList
 const items = document.querySelectorAll(".gallery-grid .item");
 
 buttons.forEach(button => {

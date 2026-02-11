@@ -78,9 +78,9 @@ header {
 
 .child {
     position: absolute;
-    width: 250px;
+    width: 17em;
     z-index: 10;
-    top: 45px;
+    top: 2em;
     list-style-type: none;
     background-color: white;
     border-radius: 10px;
@@ -101,7 +101,7 @@ header {
 .parent>ul>li>a {
     color: black;
     padding-left: 10px;
-    line-height: 40px;
+    line-height: 2.5em;
 }
 
 .parent>ul>li>a:hover {
@@ -271,6 +271,9 @@ header {
     background-color: var(--color-primary);
     color: white;
     font-size: 15px;
+}
+.form-subscribe button:hover {
+    background-color: var(--color-text);
 }
 
 footer {

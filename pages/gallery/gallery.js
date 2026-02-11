@@ -65,3 +65,30 @@ buttons.forEach(button => {
         });
     });
 });
+
+
+
+//=====================LIGHTBOX====================================
+const slides = document.querySelectorAll(".swiper-slide");
+const lightbox = document.querySelector(".lightbox");
+const lbimage = document.querySelector(".lightbox-img");
+const close = document.querySelector(".close");
+
+slides.forEach(slide => {
+    slide.addEventListener("click", () => {
+        const img = slide.querySelector("img");
+        lightbox.classList.add("active");
+        lbimage.src = img.src;
+        swiper.allowTouchMove = false;
+    });
+});
+
+lbimage.addEventListener("click", () => {
+    lbimage.classList.toggle("zoomed");
+});
+
+close.addEventListener("click", () => {
+    lightbox.classList.remove("active");
+    lightboxImg.classList.remove("zoomed");
+    swiper.allowTouchMove = true;
+});

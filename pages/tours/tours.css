@@ -96,9 +96,9 @@ header {
 
 .child {
     position: absolute;
-    width: 250px;
+    width: 17em;
     z-index: 10;
-    top: 45px;
+    top: 2em;
     list-style-type: none;
     background-color: white;
     border-radius: 10px;
@@ -112,7 +112,7 @@ header {
         transform 0.3s ease,
         visibility 0.3s,
         color 0.3s ease;
-        /* visibility: visible → hidden(Browser đợi 0.25s, sau đó mới chuyển sang hidden)
+    /* visibility: visible → hidden(Browser đợi 0.25s, sau đó mới chuyển sang hidden)
         visibility: hidden → visible(Browser chuyển ngay lập tức, không chờ 0.3s) */
 }
 
@@ -418,8 +418,10 @@ header {
     padding: 15px;
     border: none;
     border-radius: 10px;
-    ;
-
+    transition: transform 0.3s ease;
+}
+.deal-btn:hover {
+    transform: translateY(-5px);
 }
 
 .deal-right img {
@@ -467,6 +469,11 @@ header {
     border-radius: 10px;
     font-weight: bold;
     font-size: 15px;
+    transition: all 0.3s ease;
+}
+.tour-content button:hover {
+    background-color: var(--color-primary);
+    color: white;
 }
 
 .contactQuiz {
@@ -529,8 +536,11 @@ header {
     background-color: var(--color-primary);
     color: white;
     font-size: 15px;
+    transition: background-color 0.3s ease;
 }
-
+.form-subscribe button:hover {
+    background-color: var(--color-text);
+}
 footer {
     display: grid;
     grid-template-columns: 1fr 0.5fr 0.5fr 1fr;

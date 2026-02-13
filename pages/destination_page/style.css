@@ -3,12 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-:root {
-  --default-font:
-    "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
-    Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
+
 a {
   text-decoration: none;
 }
@@ -127,6 +122,7 @@ li {
   min-width: 114px;
   font-size: 15px;
 }
+
 .sub-title,
 .blog .desc {
   text-align: center;
@@ -167,76 +163,165 @@ li {
   color: white;
   margin-left: 7px;
 }
-/* ================== Main ===================== */
-.main .main--content {
-  width: 790px;
+/* main */
+.caption-des {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 765px;
+  padding: 5px;
+  text-align: center;
+}
+.caption-des h2 {
+  color: #1c4b56;
+  font-size: 32px;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.button-des {
+  text-align: center;
+}
+.btn-des {
+  padding: 10px 15px;
+  background-color: white;
+  color: #1c4b56;
+  border: 2px solid #bdb7b6;
+}
+.button-des button {
+  transition: all 0.3s ease;
+}
+.button-des button:hover {
+  background-color: #008cad;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card {
+  position: relative;
+  width: 420px;
+  height: 320px;
+  overflow: hidden;
+  border-radius: 15px;
+  flex-wrap: wrap;
+  transition: transform 0.5s ease;
+}
+.card-des {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2) 50%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+}
+.card-body {
+  position: absolute;
+  bottom: 25px;
+  right: 20px;
+  left: 20px;
+}
+.card-body h4 {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  font-family: "Raleway", sans-serif;
+}
+.card-body p {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  opacity: 0.9;
+  color: white;
+}
+.card-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.card-price i {
+  font-size: 13px;
+  opacity: 0.8;
+  color: #ffffff;
+}
+.card-price span {
+  font-size: 18px;
+  font-weight: 700;
+  color: #008cad;
+}
+.let {
+  background-color: #f2f9fb;
+  width: 1075px;
+  height: 270px;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 20px;
+}
+.let h3 {
+  color: #1c4b56;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  padding-top: 50px;
+}
+.let p {
+  color: #373737;
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+  text-align: center;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
 }
-.maincontent {
-  margin-top: 117px;
+.card-ass {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
 }
-.main--content .content .time {
-  margin-top: 65px;
-  margin-bottom: 20px;
-  text-align: center;
-  font-size: 0.95rem;
-  color: #69787b;
-  font-family: "Roboto", sans-serif;
-}
-.main--content .content .title {
-  margin-bottom: 20px;
-  text-align: center;
-  font-size: 600;
-  font-size: 2.9rem;
-  font-family: "Raleway", sans-serif;
-  line-height: 42.24px;
-  color: #1c4b56;
-}
-.main--content .content .desc {
-  text-align: center;
-  color: #1c4b56;
-  font-size: 18px;
-  line-height: 1.6;
-  font-family: "Roboto", sans-serif;
-}
-/* ================== section =============== */
-
-.main--content h2 {
-  margin-top: 50px;
-  margin-bottom: 25px;
-  text-align: start;
-  font-size: 1.8rem;
-  color: #1c4b56;
+.btn-rec {
+  padding: 14px 30px;
+  background-color: #008cad;
+  border: 2px solid #008cad;
+  color: #ffffff;
   font-weight: 600;
 }
-.main--content h3 {
-  margin-bottom: 25px;
-  color: #1c4b56;
-  font-family: Raleway, sans-serif;
-  font-size: 22.4px;
-  line-height: 26.88px;
+.btn-expl {
+  padding: 14px 30px;
+  background-color: #ffffff;
+  border: 2px solid #008cad;
+  color: #008cad;
+  font-weight: 600;
+  transition: transform 0.5s ease;
 }
-.maincontent p {
-  margin-bottom: 20px;
-  font-size: 16px;
-  color: rgb(5, 30, 35);
-  font-family: "Roboto", sans-serif;
+.btn-expl:hover {
+  background-color: #008cad;
+  color: #ffffff;
 }
-.contact-p {
-  margin-top: 50px;
-  margin-left: 20px;
+.card:hover {
+  transform: scale(1.05);
 }
-.fade-block {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.7s ease;
-}
-.fade-block.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-/* ======================== Footer ==================== */
+
+/* footer */
 .footer {
   margin-top: 50px;
   background-color: #0b171a;
@@ -360,4 +445,15 @@ li {
 }
 .footer-links a:hover {
   color: #008cad;
+}
+/* Ẩn ban đầu */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease;
+}
+/* Khi hiện */
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
 }

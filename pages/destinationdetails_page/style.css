@@ -403,7 +403,6 @@ h4 {
   justify-content: center;
   align-items: center;
 }
-/* =================== travel & Cultural ============================== */
 .travel-Cultural {
   padding: 40px;
   border-radius: 15px;
@@ -432,7 +431,34 @@ h4 {
   line-height: 1.6;
   font-family: "Roboto", sans-serif;
 }
-/* gallery */
+.gallery-main {
+  margin-bottom: 100px;
+  width: 100%;
+  height: 500px;
+  border-radius: 14px;
+  overflow: hidden;
+}
+.gallery-main img {
+  margin-top: 50px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.gallery-main .swiper-pagination {
+  bottom: 15px;
+}
+
+.gallery-main .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.6);
+  opacity: 1;
+}
+
+.gallery-main .swiper-pagination-bullet-active {
+  background: #ffffff;
+}
 /* ready */
 .Ready-back {
   background-color: #008aab;
@@ -604,4 +630,14 @@ h4 {
 }
 .footer-links a:hover {
   color: #008cad;
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s ease;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
 }

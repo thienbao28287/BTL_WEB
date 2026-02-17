@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
-    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,8 +17,9 @@
 
 <body>
     <header>
+        <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
         <div class="header__navbar">
-            <ul>
+            <ul class="nav-links">
                 <li><a href="">TOUR</a></li>
                 <li><a href="">Home</a></li>
                 <li><a href="">About</a></li>
@@ -44,8 +45,9 @@
                 <li><button>Get Started</button></li>
             </ul>
         </div>
+
         <div class="header__content">
-            <h1>Gallery</h1>
+            <h1>Tours</h1>
             <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam
                 molestias.
             </p>
@@ -152,9 +154,9 @@
     </section>
     <section class="subscribe">
         <h3>Join Our Newsletter</h3>
-        <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+        <p class="text">Subscribe to our newsletter and receive the latest news about our products and services!</p>
         <div class="form-subscribe">
-            <input type="text">
+            <input type="email">
             <button>Subscribe</button>
         </div>
     </section>
@@ -198,7 +200,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="gallery.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>

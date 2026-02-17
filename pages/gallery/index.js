@@ -12,7 +12,7 @@ const swiper = new Swiper('.swiper', {
         depth: 100,         // Độ sâu (trục Z), tạo hiệu ứng 3D
         modifier: 1,        // Hệ số nhân của hiệu ứng
         slideShadows: true, // Bật bóng đổ cho các slide 2 bên
-      },
+    },
     // Tự động chạy
     autoplay: {
         delay: 3000,
@@ -91,4 +91,14 @@ close.addEventListener("click", () => {
     lightbox.classList.remove("active");
     lightboxImg.classList.remove("zoomed");
     swiper.allowTouchMove = true;
+});
+
+
+
+
+const toggleBtn = document.querySelector(".menu-toggle");
+const navbar = document.querySelector(".header__navbar");
+
+toggleBtn.addEventListener("click", () => {
+    navbar.classList.toggle("active");
 });

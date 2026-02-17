@@ -1,7 +1,6 @@
 const buttons = document.querySelectorAll(".filter-buttons button");
 const items = document.querySelectorAll(".faq-item")
 
-//===========================FILTER===================================
 buttons.forEach(button => {
     button.addEventListener("click", () => {
         buttons.forEach(btn => btn.classList.remove("active"));
@@ -23,7 +22,7 @@ buttons.forEach(button => {
 });
 
 
-//===========================TOGGLE FAQ===================================
+
 items.forEach(item => {
     const question = item.querySelector(".question"); //lấy phần tử có class question  bên trong item
     const answer = item.querySelector(".answer");
@@ -43,3 +42,11 @@ items.forEach(item => {
 Trên hộp có dán nhãn: "faq-item active"
 .classList = danh sách các nhãn đang dán trên hộp đó.
 */
+
+
+const toggleBtn = document.querySelector(".menu-toggle");
+const navbar = document.querySelector(".header__navbar");
+
+toggleBtn.addEventListener("click", () => {
+  navbar.classList.toggle("active");
+});

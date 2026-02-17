@@ -1,20 +1,20 @@
 let tours = [];
 
 fetch("featured-tours.json")
-    .then(res => res.json())
-    .then(data => {
-        tours = data;
-        renderList(tours);
-        initSwiper();
-    })
-    .catch((error) => console.error("❌ Lỗi:", error));
+  .then(res => res.json())
+  .then(data => {
+    tours = data;
+    renderList(tours);
+    initSwiper();
+  })
+  .catch((error) => console.error("❌ Lỗi:", error));
 
 const featuredTours = document.querySelector(".swiper-wrapper");
 const img_base = "../../assests/images/";
 
 
 function renderList(list) {
-  featuredTours.innerHTML = ""; 
+  featuredTours.innerHTML = "";
 
   list.forEach(item => {
     const card = document.createElement('div');
@@ -39,29 +39,42 @@ function renderList(list) {
   });
 }
 
+
+
+
 function initSwiper() {
-    new Swiper('.swiper', {
-        slidesPerView: 1, // Nên để mặc định là 1 cho mobile
-        spaceBetween: 20,
-        loop: true,
-        observer: true, // Thêm dòng này: tự động cập nhật khi DOM thay đổi
-        observeParents: true,
-        
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '#next',
-            prevEl: '#pre',
-        },
-        breakpoints: {
-            640: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 }
-        }
-    });
+  new Swiper('.swiper', {
+    slidesPerView: 1, // Nên để mặc định là 1 cho mobile
+    spaceBetween: 20,
+    loop: true,
+    observer: true, // Thêm dòng này: tự động cập nhật khi DOM thay đổi
+    observeParents: true,
+
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '#next',
+      prevEl: '#pre',
+    },
+    breakpoints: {
+      640: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 }
+    }
+  });
 }
+
+
+const toggleBtn = document.querySelector(".menu-toggle");
+const navbar = document.querySelector(".header__navbar");
+
+toggleBtn.addEventListener("click", () => {
+  navbar.classList.toggle("active");
+});
+
+

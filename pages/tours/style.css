@@ -6,6 +6,7 @@
     --section-padding: 20px;
 }
 
+
 * {
     margin: 0;
     padding: 0;
@@ -32,25 +33,31 @@ header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../assests/images/showcase-8-sua.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 70vh;
+    min-height: 70vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .header__navbar {
     position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 3vh;
+    left: 0;
+    width: 100%;
     z-index: 100;
+    padding: 0 5%;
 }
 
 .header__navbar>ul {
     display: flex;
     background-color: rgba(0, 0, 0, 0.6);
     justify-content: space-between;
-    width: 80vw;
+    min-width: 80vw;
     list-style-type: none;
-    padding: 1rem;
+    padding: 0.5rem;
+    gap: 2rem;
     border-radius: 3rem;
     align-items: center;
 }
@@ -98,7 +105,7 @@ header {
     position: absolute;
     width: 17em;
     z-index: 10;
-    top: 2em;
+    top: 3em;
     list-style-type: none;
     background-color: white;
     border-radius: 10px;
@@ -119,9 +126,11 @@ header {
 .parent>ul>li>a {
     color: black;
     padding-left: 10px;
-    line-height: 40px;
+    line-height: 2;
+    /* background-color: #008CAD; */
 }
-.parent>ul>li>a:hover{
+
+.parent>ul>li>a:hover {
     color: var(--color-primary);
 }
 
@@ -131,14 +140,25 @@ header {
     transform: translateY(0);
 }
 
-.header__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+.menu-toggle {
+    display: none;
+    position: fixed;
+    top: 4vh;
+    right: 5%;
+    z-index: 200;
+    background: var(--color-primary);
+    border: none;
+    padding: 10px 12px;
+    border-radius: 50%;
     color: white;
-    line-height: 2rem;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.header__content {
+    text-align: center;
+    color: white;
+    line-height: 2;
 }
 
 .header__content h1 {
@@ -164,23 +184,25 @@ header {
 }
 
 .text {
-    /* background-color: aqua; */
-    padding: 0 15rem;
+    padding: 0 2%;
 }
 
 .selectTour {
     /* background-color: blueviolet; */
-    display: flex;
-    justify-content: space-between;
-    padding: 25px;
-    border-radius: 15px;
+    display: grid;
+    /* justify-content: space-between; */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    padding: 2em;
+    gap: 1em;
+    border-radius: 1em;
     box-shadow: 0px 5px 15px rgb(0, 0, 0, 0.2);
-    margin-top: 50px;
+    margin-top: 10vh;
 }
 
 .selectTour select {
-    padding: 10px;
-    width: 250px;
+    padding: 1em;
+    width: 100%;
+    max-width: 20em;
     border-radius: 5px;
 }
 
@@ -189,13 +211,9 @@ header {
 }
 
 
-/* ========TEST====== */
-
 .swiper {
     width: 100%;
     height: 100%;
-    padding-bottom: 50px;
-    /* Chừa chỗ cho pagination */
 }
 
 .swiper-slide {
@@ -215,7 +233,7 @@ header {
 }
 
 .card__desciption {
-    height: 70px;
+    min-height: 70px;
 }
 
 .buttons {
@@ -231,8 +249,9 @@ header {
 }
 
 .buttons button {
-    width: 45px;
-    height: 45px;
+    width: 100%;
+    max-width: 45px;
+    min-height: 45px;
     border: none;
     background: rgba(255, 255, 255, 0.8);
     color: var(--color-text);
@@ -272,8 +291,8 @@ header {
 }
 
 .card__image img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
     transition: transform 0.3s ease;
 }
@@ -303,14 +322,14 @@ header {
 .card__title {
     color: var(--color-text);
     font-weight: 500;
-    line-height: 60px;
+    line-height: 3;
     font-size: 20px;
 }
 
 .details {
     display: flex;
     justify-content: space-between;
-    line-height: 60px;
+    line-height: 3;
 }
 
 .card__price {
@@ -333,9 +352,9 @@ header {
 .category {
     display: grid;
     /* background-color: aquamarine; */
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     color: var(--color-primary);
-    gap: 30px;
+    gap: 3em;
 }
 
 .category-icon {
@@ -363,19 +382,19 @@ header {
 
 .deals-infor {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2em;
     /* background-color: aquamarine; */
 
 }
 
 .deal {
-    height: 400px;
+    min-height: 65vh;
     display: grid;
     grid-template-columns: 1.2fr 1fr;
     overflow: hidden;
     border-radius: 20px;
-    position: relative;
+    /* position: relative; */
 }
 
 .deal-left {
@@ -384,30 +403,32 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 20px;
+    padding: 0 4%;
     align-items: flex-start;
     /*để button đc bth*/
 }
 
 .deal-left h4 {
     font-size: 20px;
-    line-height: 60px;
+    padding-bottom: 5vh;
+    /* background-color: green; */
 }
 
 .badge-deal {
-    /* background-color: #33A0B9; */
+    background-color: #33A0B9;
     font-weight: bold;
     padding: 10px;
     border-radius: 20px;
-    position: absolute;
+    /* position: absolute;
     top: 40px;
-    left: 30px;
+    left: 30px; */
+    margin-bottom: 5vh;
 }
 
 .deal-qty {
     color: yellow;
     font-weight: 500;
-    line-height: 80px;
+    line-height: 4;
 }
 
 .deal-btn {
@@ -420,6 +441,7 @@ header {
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
+
 .deal-btn:hover {
     transform: translateY(-5px);
 }
@@ -432,9 +454,8 @@ header {
 
 .tour-cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    justify-content: flex-start;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
 }
 
 .tour-content {
@@ -471,6 +492,7 @@ header {
     font-size: 15px;
     transition: all 0.3s ease;
 }
+
 .tour-content button:hover {
     background-color: var(--color-primary);
     color: white;
@@ -480,7 +502,7 @@ header {
     display: flex;
     justify-content: center;
     padding-top: 20px;
-    gap: 20px;
+    gap: 2em;
 }
 
 .contactQuiz button {
@@ -508,46 +530,57 @@ header {
 .subscribe {
     background-color: #0B171A;
     color: white;
-    line-height: 50px;
-    height: 50vh;
-}
-
-.form-subscribe {
     display: flex;
-    justify-content: center;
-    height: 40px;
-    position: relative;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;  
+    text-align: center;
+    min-height: 50vh;
+}
+.form-subscribe {
+    margin: 30px auto 0;
+    display: flex;
+    align-items: center;
+    background: #1f1f1f;
+    border-radius: 50px;
+    padding: 6px;
+    max-width: 600px;
+    width: 100%;
 }
 
 .form-subscribe input {
-    width: 30rem;
-    border: 1px solid #3B3B3B;
-    border-radius: 20px;
-    background-color: #252525;
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    padding: 14px 20px;
+    font-size: 16px;
+    border-radius: 50px;
 }
 
 .form-subscribe button {
-    border-radius: 20px;
     border: none;
-    line-height: 40px;
-    padding: 0 20px;
-    position: absolute;
-    right: 29%;
-    background-color: var(--color-primary);
+    background-color: var(--color-primary, #0ea5b7);
     color: white;
-    font-size: 15px;
-    transition: background-color 0.3s ease;
+    padding: 14px 28px;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
+
 .form-subscribe button:hover {
     background-color: var(--color-text);
 }
+
 footer {
     display: grid;
-    grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     list-style-type: none;
     color: white;
     background-color: #031013;
-    height: 50vh;
+    min-height: 50vh;
     font-size: 13px;
     padding: 50px;
 }
@@ -573,7 +606,7 @@ footer i {
 
 .contact-icons {
     display: flex;
-    gap: 20px;
+    gap: 2em;
     font-size: 20px;
     margin-top: 20px;
 }
@@ -582,4 +615,32 @@ footer i {
     border: 1px solid var(--color-primary);
     border-radius: 50%;
     padding: 10px;
+}
+
+
+
+
+@media (max-width: 1200px) {
+    .header__navbar>ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        border-radius: 1rem;
+        padding: 2rem;
+        width: 90%;
+        margin: auto;
+    }
+
+    .header__navbar {
+        display: none;
+        top: 10vh;
+    }
+
+    .header__navbar.active {
+        display: block;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
 }

@@ -1,0 +1,468 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.main-content {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1320px;
+  max-width: calc(100% - 48px);
+}
+.btn {
+  background-color: #008cad;
+  color: white;
+  font-size: 14px;
+  margin: 0 0 0 30px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.header {
+  padding-top: 20px;
+  padding-bottom: 8px;
+  background-image:
+    linear-gradient(135deg, rgba(3, 16, 19, 0.5), rgba(3, 16, 19, 0.5)),
+    url(../../assests/images/showcase-8-sua.jpg);
+  height: 365px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 20px 0;
+  transition: 0.3s;
+}
+.header .body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.body .title {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  margin-left: 25px;
+  font-weight: 600;
+  padding: 5px 0 5px 5px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.main-navbar {
+  background-color: rgba(0, 0, 0, 0.26);
+  border-radius: 50px;
+}
+.navbar ul {
+  display: flex;
+}
+.navbar ul li {
+  position: relative;
+}
+.navbar a {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 25px 14.87px;
+  font-size: 19px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+.navbar a:hover {
+  color: rgba(255, 255, 255, 0.7);
+  text-shadow: 1px 0 0 rgba(255, 255, 255, 0.7);
+  text-decoration: underline;
+}
+
+.navbar ul li ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  display: none;
+  flex-direction: column;
+  padding: 10px 0;
+  z-index: 999;
+}
+.navbar ul li ul li a {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: black;
+  white-space: nowrap;
+}
+.navbar ul li ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: black;
+  text-decoration: none;
+}
+.navbar ul li:hover > ul {
+  display: flex;
+}
+
+.action {
+  margin-right: 30px;
+}
+.action .btn-Get-Started {
+  padding: 10.5px 24px;
+  min-width: 114px;
+  font-size: 15px;
+}
+
+.sub-title,
+.blog .desc {
+  text-align: center;
+}
+.blog .sub-title {
+  margin-top: 140px;
+  color: white;
+  font-size: 42px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+.blog .desc {
+  margin: 16px 7px 10px;
+  font-size: 14px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+.home-blog {
+  margin-top: 17px;
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+.home-blog .home-blog-row {
+  margin-top: 5px;
+  font-size: 10px;
+  color: #bdb7b6;
+}
+.link-home {
+  font-size: 15px;
+  font-weight: 400;
+  color: #008cad;
+  margin-right: 7px;
+}
+.link-blog {
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+  margin-left: 7px;
+}
+/* ============================= Main ============================== */
+.main-content .container {
+  margin-top: 90px;
+}
+.main-content .title {
+  text-align: center;
+}
+.main-content .container p {
+  color: red;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #051e23;
+  font-family: "Roboto", sans-serif;
+}
+.main-content .box {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px 5px;
+  border-radius: 50px;
+  justify-content: center;
+  text-align: center;
+  background-color: #e5f3f6;
+  color: rgb(0, 140, 173);
+  font-size: 15.2px;
+  font-weight: 400;
+  width: 260px;
+}
+.main-content .title h2 {
+  margin-top: 20px;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-family: "Raleway", sans-serif;
+  color: #1c4b56;
+}
+.main-content h3 {
+  margin-top: 20px;
+
+  font-family: "Raleway", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #1c4b56;
+}
+
+.main-content .box-infor {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 20px;
+  background-color: rgba(0, 140, 173, 0.1);
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+.main-content .box-infor i {
+  font-size: 1.5rem;
+  color: #008cad;
+}
+.main-content .box-alert {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  border-radius: 15px;
+  border-left: 4px solid #008cad;
+  margin-top: 25px;
+  padding-left: 30px;
+}
+.box-alert i {
+  font-size: 2rem;
+  color: #008cad;
+}
+.alert-content {
+  padding: 25px 0px;
+}
+.alert-content h5 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: #1c4b56;
+  font-family: "Raleway", sans-serif;
+}
+.alert-content p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+.prohibited-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+.prohibited-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 12px;
+}
+.prohibited-item i {
+  color: #dc3545;
+  font-size: 1.2rem;
+}
+.prohibited-item span {
+  font-size: 0.95rem;
+  font-family: "Roboto", sans-serif;
+  color: color-mix(in srgb, #051e23, transparent 20%);
+}
+.content-sec5 {
+  margin-top: 45px;
+}
+.content-sec5 p {
+  margin-bottom: 12px;
+}
+.title-sec5 {
+  margin-left: 25px;
+}
+.content-sec5 .hehe-sec5 {
+  margin-left: 50px;
+}
+#haha {
+  margin-top: 60px;
+}
+.box-contact {
+  margin-top: 60px;
+  background-color: #e5f3f7;
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.box-contact p {
+  margin-bottom: 30px;
+  color: #4d6064;
+}
+.box-contact h4 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 8px;
+  color: #1c4b56;
+  font-family: "Raleway", sans-serif;
+}
+.box-contact .contact-icon i {
+  font-size: 1.8rem;
+  color: white;
+  padding: 10px 15px;
+}
+.box-contact .contact-icon {
+  background-color: #008cad;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-content .btn {
+  margin: 0px;
+}
+.contact-content a {
+  align-items: center;
+  padding: 15px 25px;
+  background-color: #008cad;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+
+/* ======================== Footer ==================== */
+.footer {
+  margin-top: 50px;
+  background-color: #0b171a;
+  height: 250px;
+}
+.footer .sub-title {
+  padding-top: 45px;
+  padding-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 24px;
+  font-weight: 700px;
+}
+.footer .desc {
+  padding-bottom: 30px;
+  text-align: center;
+  color: white;
+}
+.input {
+  border-color: #252525;
+  color: white;
+  position: relative;
+  display: flex;
+  border-radius: 50px;
+  width: 630px;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: auto;
+  margin-left: auto;
+}
+.input .email {
+  background-color: #373737;
+  padding-left: 12px;
+  color: white;
+  height: 47px;
+  width: 630px;
+  border-radius: 50px;
+}
+.input .input-button {
+  position: absolute;
+  border-color: rgba(255, 255, 255, 0.1);
+  font-style: 16px;
+  padding: 14px 20px;
+  margin-left: auto;
+  right: 0;
+}
+.footer2 {
+  padding-top: 50px;
+  background-color: #031013;
+  height: 200px;
+  color: white;
+  padding-bottom: 50px;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+.hehe {
+  font-size: 25px;
+}
+.ft-title {
+  font-family: "Raleway", sans-serif;
+}
+.address {
+  margin-top: 10px;
+}
+.connect {
+  margin-top: 15px;
+}
+.footer-links {
+  line-height: 25px;
+}
+.footer-services {
+  line-height: 25px;
+}
+.footer-follow {
+  line-height: 25px;
+}
+.fa-solid {
+  font-size: 12px;
+  color: #008cad;
+
+  align-items: center;
+}
+.footer-links a {
+  color: rgba(255, 255, 255, 0.7);
+}
+.footer-services a {
+  color: rgba(255, 255, 255, 0.7);
+}
+.contact-icon {
+  margin-top: 10px;
+  display: flex;
+  gap: 12px;
+}
+.contact-icon a {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+  color: white;
+}
+.footer-f {
+  padding-top: 30px;
+  background-color: #031013;
+  color: white;
+  text-align: center;
+}
+.footer-f .content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.footer-services a:hover {
+  color: #008cad;
+}
+.footer-follow a:hover {
+  color: #008cad;
+}
+.footer-links a:hover {
+  color: #008cad;
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s ease;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}

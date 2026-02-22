@@ -15,7 +15,6 @@ buttons.forEach((btn) => {
     });
   });
 });
-/* ================= SCROLL REVEAL ================= */
 const revealElements = document.querySelectorAll(".reveal");
 
 const observer = new IntersectionObserver(
@@ -23,12 +22,12 @@ const observer = new IntersectionObserver(
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add("show");
-        observer.unobserve(entry.target); // hiện 1 lần rồi thôi
+        observer.unobserve(entry.target);
       }
     });
   },
   {
-    threshold: 0.2, // 20% element xuất hiện thì hiện
+    threshold: 0.2,
   },
 );
 

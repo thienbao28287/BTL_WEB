@@ -164,7 +164,6 @@ li {
   color: white;
   margin-left: 7px;
 }
-/* =================== main ========================= */
 .main-content .container {
   margin-top: 70px;
 }
@@ -207,7 +206,6 @@ h4 {
   top: 190px;
   right: 420px;
 }
-/* ===================== row ========================= */
 .container .row {
   margin-right: auto;
   margin-left: auto;
@@ -228,7 +226,6 @@ h4 {
   color: color-mix(in srgb, #051e23, transparent 20%);
   text-align: center;
 }
-/* ============== section ======================= */
 .header-section {
   margin-top: 100px;
 }
@@ -275,7 +272,6 @@ h4 {
 .card:hover img {
   transform: scale(1.04);
 }
-/* ========= section ============== */
 .card-section .card-icon {
   margin: 0 25px;
   margin-top: 25px;
@@ -319,7 +315,6 @@ h4 {
 .card-icon span {
   color: color-mix(in srgb, #051e23, transparent 40%);
 }
-/* ===================== map ============================ */
 .map {
   background: white;
   border-radius: 15px;
@@ -356,7 +351,6 @@ h4 {
   color: #008cad;
   font-size: 1.2rem;
 }
-/* weather */
 .weather {
   display: flex;
   margin-top: 50px;
@@ -459,7 +453,6 @@ h4 {
 .gallery-main .swiper-pagination-bullet-active {
   background: #ffffff;
 }
-/* ready */
 .Ready-back {
   background-color: #008aab;
   border-radius: 20px;

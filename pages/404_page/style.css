@@ -12,24 +12,24 @@ li {
 .main-content {
   margin-right: auto;
   margin-left: auto;
-  width: 1320px;
-  max-width: calc(100% - 48px);
+  width: 82.5rem;
+  max-width: calc(100% - 3rem);
 }
 .btn {
   background-color: #008cad;
   color: white;
-  font-size: 14px;
-  margin: 0 0 0 30px;
-  border-radius: 50px;
+  font-size: 0.875rem;
+  margin: 0 0 0 1.875rem;
+  border-radius: 3.125rem;
   transition: 0.3s;
 }
 .header {
-  padding-top: 20px;
-  padding-bottom: 8px;
+  padding-top: 1.25rem;
+  padding-bottom: 0.5rem;
   background-image:
     linear-gradient(135deg, rgba(3, 16, 19, 0.5), rgba(3, 16, 19, 0.5)),
     url(../../assests/images/showcase-8-sua.jpg);
-  height: 365px;
+  height: 22.8125rem;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -40,7 +40,7 @@ li {
   left: 0;
   width: 100%;
   z-index: 1000;
-  padding: 20px 0;
+  padding: 1.25rem 0;
   transition: 0.3s;
 }
 .header .body {
@@ -50,16 +50,15 @@ li {
 }
 .body .title {
   font-family: "Raleway", sans-serif;
-  font-size: 24px;
-  margin-left: 25px;
+  font-size: 1.5rem;
+  margin-left: 1.5625rem;
   font-weight: 600;
-  padding: 5px 0 5px 5px;
-  text-transform: uppercase;
+  padding: 0.3125rem 0 0.3125rem 0.3125rem;
   color: #ffffff;
 }
 .main-navbar {
   background-color: rgba(0, 0, 0, 0.26);
-  border-radius: 50px;
+  border-radius: 3.125rem;
 }
 .navbar ul {
   display: flex;
@@ -71,10 +70,9 @@ li {
   display: inline-block;
   font-family: "Poppins", sans-serif;
   color: rgba(255, 255, 255, 0.7);
-  padding: 25px 14.87px;
-  font-size: 19px;
+  padding: 1.5625rem 0.929rem;
+  font-size: 1.1875rem;
   font-weight: 500;
-  white-space: nowrap;
   transition: 0.3s;
 }
 .navbar a:hover {
@@ -86,17 +84,17 @@ li {
   position: absolute;
   top: 100%;
   left: 0;
-  min-width: 220px;
+  min-width: 13.75rem;
   background-color: white;
   color: black;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   display: none;
   flex-direction: column;
-  padding: 10px 0;
+  padding: 0.625rem 0;
   z-index: 999;
 }
 .navbar ul li ul li a {
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
   font-size: 14px;
   color: black;
   white-space: nowrap;
@@ -113,65 +111,65 @@ li {
   margin-right: 30px;
 }
 .action .btn-Get-Started {
-  padding: 10.5px 24px;
-  min-width: 114px;
-  font-size: 15px;
+  padding: 11px 1.5rem;
+  min-width: 7.125rem;
+  font-size: 0.9375rem;
 }
 .sub-title,
 .blog .desc {
   text-align: center;
 }
 .blog .sub-title {
-  margin-top: 140px;
+  margin-top: 8.75rem;
   color: white;
-  font-size: 42px;
+  font-size: 2.625rem;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
 }
 .blog .desc {
-  margin: 16px 7px 10px;
-  font-size: 14px;
+  margin: 1rem 0.4375rem 0.625rem;
+  font-size: 0.875rem;
   color: white;
   font-family: "Poppins", sans-serif;
 }
 .home-blog {
-  margin-top: 17px;
+  margin-top: 1.0625rem;
   display: flex;
   justify-content: center;
   font-family: "Poppins", sans-serif;
 }
 .home-blog .home-blog-row {
-  margin-top: 5px;
-  font-size: 10px;
+  margin-top: 0.3125rem;
+  font-size: 0.625rem;
   color: #bdb7b6;
 }
 .link-home {
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 400;
   color: #008cad;
-  margin-right: 7px;
+  margin-right: 0.4375rem;
 }
 .link-blog {
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 400;
   color: white;
-  margin-left: 7px;
-} /* ============== main ============== */
+  margin-left: 0.4375rem;
+}
 .error-block {
   display: flex;
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 6.25rem;
 }
 .error-circle {
   position: relative;
-  height: 350px;
+  height: 21.875rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .error-circle i {
   position: relative;
-  left: 255px;
+  left: 15.9375rem;
   font-size: 9rem;
   opacity: 1;
   color: #008cad;
@@ -180,50 +178,50 @@ li {
   border-radius: 50%;
 }
 .error-block .circle-1 {
-  left: 227px;
-  width: 200px;
-  height: 200px;
+  left: 14.1875rem;
+  width: 12.5rem;
+  height: 12.5rem;
   background-color: #dceff4;
-  margin-left: 83px;
+  margin-left: 5.1875rem;
 }
 .error-circle .circle-2 {
   position: absolute;
-  left: 180px;
-  top: 80px;
-  width: 120px;
-  height: 120px;
+  left: 11.25rem;
+  top: 5rem;
+  width: 7.5rem;
+  height: 7.5rem;
   background-color: #e8edef;
   opacity: 0.7;
 }
 .error-circle .circle-3 {
   position: absolute;
-  left: 380px;
-  bottom: 85px;
-  width: 80px;
-  height: 80px;
+  left: 23.75rem;
+  bottom: 5.3125rem;
+  width: 5rem;
+  height: 5rem;
   background-color: #d6ecf2;
   opacity: 0.7;
 }
 .btn-error {
-  margin-left: 3px;
+  margin-left: 0.1875rem;
   background-color: #d6ecf2;
   font-size: 0.8rem;
   font-weight: 600;
   color: #008cad;
   font-family: "Roboto", sans-serif;
-  padding: 10px 25px;
+  padding: 0.625rem 1.5625rem;
 }
 .error-content {
-  width: 630px;
+  width: 39.375rem;
 }
 .error-content h1 {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 1.875rem;
+  margin-bottom: 1.875rem;
   color: #1c4b56;
   font-family: "Raleway", sans-serif;
   font-weight: 900;
-  font-size: 128px;
-  line-height: 128px;
+  font-size: 8rem;
+  line-height: 8rem;
 }
 .error-content h2 {
   font-size: 2.5rem;
@@ -239,34 +237,34 @@ li {
   line-height: 1.6;
 }
 .error-contact {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 3.125rem;
+  margin-bottom: 3.125rem;
 }
 .error-contact i {
   font-size: 1.1rem;
   font-family: "Roboto", sans-serif;
 }
 .error-contact .btn-house {
-  border-radius: 8px;
+  border-radius: 0.5rem;
   color: #ffffff;
-  padding: 17px 17px;
-  margin-left: 3px;
-  border: 2px solid #008cad;
+  padding: 1.0625rem 1.0625rem;
+  margin-left: 0.1875rem;
+  border: 0.125rem solid #008cad;
 }
 .error-contact .btn-question {
-  border-radius: 8px;
+  border-radius: 0.5rem;
   background-color: #ffffff;
   color: #008cad;
-  padding: 17px 25px;
-  border: 2px solid #008cad;
+  padding: 1.0625rem 1.5625rem;
+  border: 0.125rem solid #008cad;
 }
 .error-section {
   background-color: #f2f9fb;
-  border-radius: 12px;
-  padding-left: 30px;
+  border-radius: 0.75rem;
+  padding-left: 1.875rem;
 }
 .error-section h3 {
-  padding-top: 30px;
+  padding-top: 1.875rem;
   font-size: 1.2rem;
   font-weight: 600;
   color: #1c4b75;
@@ -274,7 +272,7 @@ li {
   font-family: "Raleway", sans-serif;
 }
 .error-section li {
-  margin: 13px 0;
+  margin: 0.8125rem 0;
   font-size: 1.05rem;
 }
 .error-section i {
@@ -286,22 +284,22 @@ li {
 }
 .error-section li:last-child {
   padding-bottom: 30px;
-} /* ======================== Footer ==================== */
+}
 .footer {
-  margin-top: 50px;
+  margin-top: 3.125rem;
   background-color: #0b171a;
-  height: 250px;
+  height: 15.625rem;
 }
 .footer .sub-title {
-  padding-top: 45px;
-  padding-bottom: 20px;
+  padding-top: 2.8125rem;
+  padding-bottom: 1.25rem;
   font-family: "Poppins", sans-serif;
   color: white;
-  font-size: 24px;
-  font-weight: 700px;
+  font-size: 1.5rem;
+  font-weight: 43.75rem;
 }
 .footer .desc {
-  padding-bottom: 30px;
+  padding-bottom: 1.875rem;
   text-align: center;
   color: white;
 }
@@ -310,8 +308,8 @@ li {
   color: white;
   position: relative;
   display: flex;
-  border-radius: 50px;
-  width: 630px;
+  border-radius: 3.125rem;
+  width: 39.375rem;
   align-items: center;
   justify-content: space-between;
   margin-right: auto;
@@ -319,54 +317,54 @@ li {
 }
 .input .email {
   background-color: #373737;
-  padding-left: 12px;
+  padding-left: 0.75rem;
   color: white;
-  height: 47px;
-  width: 630px;
-  border-radius: 50px;
+  height: 2.9375rem;
+  width: 39.375rem;
+  border-radius: 3.125rem;
 }
 .input .input-button {
   position: absolute;
   border-color: rgba(255, 255, 255, 0.1);
-  font-style: 16px;
-  padding: 14px 20px;
+  font-style: 1rem;
+  padding: 0.875rem 1.25rem;
   margin-left: auto;
   right: 0;
 }
 .footer2 {
-  padding-top: 50px;
+  padding-top: 3.125rem;
   background-color: #031013;
-  height: 200px;
+  height: 12.5rem;
   color: white;
-  padding-bottom: 50px;
+  padding-bottom: 3.125rem;
 }
 .footer-content {
   display: flex;
   justify-content: space-between;
 }
 .hehe {
-  font-size: 25px;
+  font-size: 1.5625rem;
 }
 .ft-title {
   font-family: "Raleway", sans-serif;
 }
 .address {
-  margin-top: 10px;
+  margin-top: 0.625rem;
 }
 .connect {
-  margin-top: 15px;
+  margin-top: 0.9375rem;
 }
 .footer-links {
-  line-height: 25px;
+  line-height: 1.5625rem;
 }
 .footer-services {
-  line-height: 25px;
+  line-height: 1.5625rem;
 }
 .footer-follow {
-  line-height: 25px;
+  line-height: 1.5625rem;
 }
 .fa-solid {
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #008cad;
   align-items: center;
 }
@@ -379,27 +377,27 @@ li {
 .contact-icon {
   margin-top: 10px;
   display: flex;
-  gap: 12px;
+  gap: 0.75rem;
 }
 .contact-icon a {
-  width: 44px;
-  height: 44px;
+  width: 2.75rem;
+  height: 2.75rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(255, 255, 255, 0.35);
+  border: 0.0625rem solid rgba(255, 255, 255, 0.35);
   border-radius: 50%;
   color: white;
 }
 .footer-f {
-  padding-top: 30px;
+  padding-top: 1.875rem;
   background-color: #031013;
   color: white;
   text-align: center;
 }
 .footer-f .content {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
 }
 .footer-services a:hover {
   color: #008cad;
@@ -412,7 +410,7 @@ li {
 }
 .reveal {
   opacity: 0;
-  transform: translateY(40px);
+  transform: translateY(2.5rem);
   transition: all 0.7s ease;
 }
 .reveal.show {

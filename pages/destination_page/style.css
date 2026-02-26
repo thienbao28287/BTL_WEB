@@ -1,0 +1,459 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.main-content {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1320px;
+  max-width: calc(100% - 48px);
+}
+.btn {
+  background-color: #008cad;
+  color: white;
+  font-size: 14px;
+  margin: 0 0 0 30px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.header {
+  padding-top: 20px;
+  padding-bottom: 8px;
+  background-image:
+    linear-gradient(135deg, rgba(3, 16, 19, 0.5), rgba(3, 16, 19, 0.5)),
+    url(../../assests/images/showcase-8-sua.jpg);
+  height: 365px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 20px 0;
+  transition: 0.3s;
+}
+.header .body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.body .title {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  margin-left: 25px;
+  font-weight: 600;
+  padding: 5px 0 5px 5px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.main-navbar {
+  background-color: rgba(0, 0, 0, 0.26);
+  border-radius: 50px;
+}
+.navbar ul {
+  display: flex;
+}
+.navbar ul li {
+  position: relative;
+}
+.navbar a {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 25px 14.87px;
+  font-size: 19px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+.navbar a:hover {
+  color: rgba(255, 255, 255, 0.7);
+  text-shadow: 1px 0 0 rgba(255, 255, 255, 0.7);
+  text-decoration: underline;
+}
+
+.navbar ul li ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  display: none;
+  flex-direction: column;
+  padding: 10px 0;
+  z-index: 999;
+}
+.navbar ul li ul li a {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: black;
+  white-space: nowrap;
+}
+.navbar ul li ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: black;
+  text-decoration: none;
+}
+.navbar ul li:hover > ul {
+  display: flex;
+}
+
+.action {
+  margin-right: 30px;
+}
+.action .btn-Get-Started {
+  padding: 10.5px 24px;
+  min-width: 114px;
+  font-size: 15px;
+}
+
+.sub-title,
+.blog .desc {
+  text-align: center;
+}
+.blog .sub-title {
+  margin-top: 140px;
+  color: white;
+  font-size: 42px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+.blog .desc {
+  margin: 16px 7px 10px;
+  font-size: 14px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+.home-blog {
+  margin-top: 17px;
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+.home-blog .home-blog-row {
+  margin-top: 5px;
+  font-size: 10px;
+  color: #bdb7b6;
+}
+.link-home {
+  font-size: 15px;
+  font-weight: 400;
+  color: #008cad;
+  margin-right: 7px;
+}
+.link-blog {
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+  margin-left: 7px;
+}
+/* main */
+.caption-des {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 765px;
+  padding: 5px;
+  text-align: center;
+}
+.caption-des h2 {
+  color: #1c4b56;
+  font-size: 32px;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.button-des {
+  text-align: center;
+}
+.btn-des {
+  padding: 10px 15px;
+  background-color: white;
+  color: #1c4b56;
+  border: 2px solid #bdb7b6;
+}
+.button-des button {
+  transition: all 0.3s ease;
+}
+.button-des button:hover {
+  background-color: #008cad;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card {
+  position: relative;
+  width: 420px;
+  height: 320px;
+  overflow: hidden;
+  border-radius: 15px;
+  flex-wrap: wrap;
+  transition: transform 0.5s ease;
+}
+.card-des {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2) 50%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+}
+.card-body {
+  position: absolute;
+  bottom: 25px;
+  right: 20px;
+  left: 20px;
+}
+.card-body h4 {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  font-family: "Raleway", sans-serif;
+}
+.card-body p {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  opacity: 0.9;
+  color: white;
+}
+.card-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.card-price i {
+  font-size: 13px;
+  opacity: 0.8;
+  color: #ffffff;
+}
+.card-price span {
+  font-size: 18px;
+  font-weight: 700;
+  color: #008cad;
+}
+.let {
+  background-color: #f2f9fb;
+  width: 1075px;
+  height: 270px;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 20px;
+}
+.let h3 {
+  color: #1c4b56;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  padding-top: 50px;
+}
+.let p {
+  color: #373737;
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+  text-align: center;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card-ass {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.btn-rec {
+  padding: 14px 30px;
+  background-color: #008cad;
+  border: 2px solid #008cad;
+  color: #ffffff;
+  font-weight: 600;
+}
+.btn-expl {
+  padding: 14px 30px;
+  background-color: #ffffff;
+  border: 2px solid #008cad;
+  color: #008cad;
+  font-weight: 600;
+  transition: transform 0.5s ease;
+}
+.btn-expl:hover {
+  background-color: #008cad;
+  color: #ffffff;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* footer */
+.footer {
+  margin-top: 50px;
+  background-color: #0b171a;
+  height: 250px;
+}
+.footer .sub-title {
+  padding-top: 45px;
+  padding-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 24px;
+  font-weight: 700px;
+}
+.footer .desc {
+  padding-bottom: 30px;
+  text-align: center;
+  color: white;
+}
+.input {
+  border-color: #252525;
+  color: white;
+  position: relative;
+  display: flex;
+  border-radius: 50px;
+  width: 630px;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: auto;
+  margin-left: auto;
+}
+.input .email {
+  background-color: #373737;
+  padding-left: 12px;
+  color: white;
+  height: 47px;
+  width: 550px;
+  border-radius: 50px 0 0 50px;
+}
+.input .input-button {
+  position: absolute;
+  border-color: rgba(255, 255, 255, 0.1);
+  font-style: 16px;
+  padding: 14px 20px;
+  margin-left: auto;
+  right: 0;
+}
+.footer2 {
+  padding-top: 50px;
+  background-color: #031013;
+  height: 200px;
+  color: white;
+  padding-bottom: 50px;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+.hehe {
+  font-size: 25px;
+}
+.ft-title {
+  font-family: "Raleway", sans-serif;
+}
+.address {
+  margin-top: 10px;
+}
+.connect {
+  margin-top: 15px;
+}
+.footer-links {
+  line-height: 25px;
+}
+.footer-services {
+  line-height: 25px;
+}
+.footer-follow {
+  line-height: 25px;
+}
+.fa-solid {
+  font-size: 12px;
+  color: #008cad;
+
+  align-items: center;
+}
+.footer-links a {
+  color: rgba(255, 255, 255, 0.7);
+}
+.footer-services a {
+  color: rgba(255, 255, 255, 0.7);
+}
+.contact-icon {
+  margin-top: 10px;
+  display: flex;
+  gap: 12px;
+}
+.contact-icon a {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+  color: white;
+}
+.footer-f {
+  padding-top: 30px;
+  background-color: #031013;
+  color: white;
+  text-align: center;
+}
+.footer-f .content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.footer-services a:hover {
+  color: #008cad;
+}
+.footer-follow a:hover {
+  color: #008cad;
+}
+.footer-links a:hover {
+  color: #008cad;
+}
+/* Ẩn ban đầu */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease;
+}
+/* Khi hiện */
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
